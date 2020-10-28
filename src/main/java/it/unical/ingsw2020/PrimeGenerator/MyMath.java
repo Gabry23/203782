@@ -9,6 +9,7 @@ public class MyMath {
 		List<Integer> primeNumbers = new LinkedList<>();
 		if(n>=2) {
 			primeNumbers.add(2);
+			
 		}
 		
 		for(int i=3; i<=n; i+=2) {
@@ -18,7 +19,7 @@ public class MyMath {
 		return primeNumbers;
 	}
 
-	private boolean isPrime(int number) {
+	public static boolean isPrime(int number) {
 		if(number<2) {
 			return false;
 		}
